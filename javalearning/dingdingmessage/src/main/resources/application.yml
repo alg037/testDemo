@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: 普罗米修斯-demo
+#exceptionnotice:
+#  dinding:
+#    phone-num: 13655714563
+#    web-hook: 04251ad2fefbfb8425810f09e28f60b85c2d1dae0099dbaf17f1f1ee117ae8b5
+#  included-trace-package: com.example.dingdingmessage.config
+#  notice-type: dingding
+#  listen-type: common
+#  open-notice: true
+#  exclude-exceptions:
+#    - java.lang.IllegalArgumentException
+
+exceptionnotice:
+  open-notice: true
+  project-enviroment: develop
+  included-trace-package: com.example
+  dingding:
+    phone-num: 13655714563
+    web-hook: https://oapi.dingtalk.com/robot/send?access_token=04251ad2fefbfb8425810f09e28f60b85c2d1dae0099dbaf17f1f1ee117ae8b5
